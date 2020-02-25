@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body style="background:darkblue;color:white">
+
+<p>Armstrong Number with array.</p>
+
+<button>Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(x) {
+var compare = x;
+ var sum = 0;
+  var sum1 = 0;
+ var r = [];
+while(x>0){
+var p = Math.floor(x % 10);
+var q = Math.floor(x / 10);
+ x = q;
+ 
+r[sum]= p;
+sum++;
+ 
+
+ 
+ }
+ 
+  console.log(r.length)
+ 
+ for(i=0;i<r.length;i++){
+ sum1 += r[i]*r[i]*r[i];
+ }
+
+if(compare == sum1){
+  document.getElementById("demo").innerHTML = sum1 +" " +"is a Armstrong number";
+  }
+  else{
+   document.getElementById("demo").innerHTML = compare +" " +"is not a Armstrong number";
+  }
+ 
+}
+
+myFunction(370)
+</script>
+
+</body>
+</html>
